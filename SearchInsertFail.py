@@ -8,7 +8,6 @@ def searchInsert(nums: list, target: int):
             nums = nums[mid:]
         elif(nums[mid]>target):
             nums = nums[:mid]
-        print(nums)
         mid = round(len(nums)/2)
     if target > nums[0]: return(original_nums.index(nums[0])+1)
     return(original_nums.index(nums[0]))
